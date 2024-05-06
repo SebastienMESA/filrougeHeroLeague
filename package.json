@@ -1,0 +1,20 @@
+{
+  "name": "hero-league-pour-de-vrai",
+  "version": "1.0.0",
+  "description": "Projet hero League à améliorer tout au long de la formation",
+  "main": "./backend/server.js",
+  "scripts": {
+    "start": "nodemon ./backend/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "chalk": "^4.1.2",
+    "nodemon": "^3.1.0"
+  }
+}
