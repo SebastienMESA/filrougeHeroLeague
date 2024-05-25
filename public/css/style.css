@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Satoshi";
-    src: url(../assets/fonts/Satoshi-Variable.ttf);
+    src: url(/fonts/Satoshi-Variable.ttf);
 }
 
 :root {
@@ -46,15 +46,77 @@ a {
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
-    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.39);
-    padding: 2rem 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.39);
+    background-color: rgba(0, 0, 0, 0.699);
     position: fixed;
-    top: 0;
+    height: 7rem;
+    top: 0rem;
     left: 2rem;
     right: 2rem;
     z-index: 1;
-    transition: 0.2s;
+    transition: 0.25s;
 }
+
+.burger-menu {
+    visibility: hidden;
+    position: absolute;
+    border: 1px solid var(--white1);
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: var(--color5);
+    top: 0;
+    left: -140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.5s ease-out;
+    z-index: 2;
+}
+
+.burger-menu-icon {
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+
+}
+
+.burger-line {
+    width: 30px;
+    height: 4px;
+    margin-top: 0.3rem;
+    background-color: var(--white1);
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.burger-item {
+    margin: 0.5rem;
+}
+
+.burgerOut {
+    left:0;
+}
+
+.burgerOut .burger-line {
+    position: absolute;
+}
+
+.burgerOut .burger-line:nth-child(1) {
+    transform: rotate(-45deg);
+
+}
+ 
+.burgerOut .burger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.burgerOut .burger-line:nth-child(3) {
+    transform: rotate(45deg);
+}
+
 
 .nav-title {
     font-size: 2rem;
@@ -81,13 +143,12 @@ a {
 }
 
 .nav-link:hover {
-    background-color: var(--color4);
+    background-color: #4D4D4D;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px var(--color3);
 }
 
 .title-container {
-    background: url(../assets/images/hero-banner.webp) center/cover no-repeat;
+    background: url(/img/hero-banner.webp) center/cover no-repeat;
     height: calc(100% - 7rem);
     border-radius: 20px;
     margin-top: 7rem;
@@ -137,7 +198,7 @@ a {
 
 .super-title {
     font-style: normal;
-    color: #A29BFE;
+    color: var(--color1);
 }
 
 .services-grid-container {
@@ -254,27 +315,27 @@ a {
 
 
 .Cat {
-    background: url(../assets/images/catastrophic.webp) center/cover no-repeat; 
+    background: url(/img/catastrophic.webp) center/cover no-repeat; 
 }
 
 .Carrot {
-    background: url(../assets/images/carotte-woman.webp) center/cover no-repeat;
+    background: url(/img/carotte-woman.webp) center/cover no-repeat;
 }
 
 .Ultraquenarde {
-    background: url(../assets/images/ultraquenarde.webp) center/cover no-repeat;
+    background: url(/img/ultraquenarde.webp) center/cover no-repeat;
 }
 
 .Poulpy {
-    background: url(../assets/images/poulpy.webp) center/cover no-repeat;
+    background: url(/img/poulpy.webp) center/cover no-repeat;
 }
 
 .Orang {
-    background: url(../assets/images/oran-wu-tang-clan.webp) center/cover no-repeat;
+    background: url(/img/oran-wu-tang-clan.webp) center/cover no-repeat;
 }
 
 .Superimé {
-    background: url(../assets/images/superime.webp) center/cover no-repeat;
+    background: url(/img/superime.webp) center/cover no-repeat;
 }
 
 .hero-btn {
@@ -305,19 +366,19 @@ a {
 }
 
 .pp1 {
-    background: url(../assets/images/testimony-1.webp) center/cover no-repeat;
+    background: url(/img/testimony-1.webp) center/cover no-repeat;
 }
 
 .pp2 {
-    background: url(../assets/images/testimony-2.webp) center/cover no-repeat;
+    background: url(/img/testimony-2.webp) center/cover no-repeat;
 }
 
 .pp3 {
-    background: url(../assets/images/testimony-3.webp) center/cover no-repeat;
+    background: url(/img/testimony-3.webp) center/cover no-repeat;
 }
 
 .pp4 {
-    background: url(../assets/images/testimony-4.webp) center/cover no-repeat; 
+    background: url(/img/testimony-4.webp) center/cover no-repeat; 
 }
 
 .pseudo {
@@ -431,7 +492,7 @@ a {
         display: block;
         text-align: center;
         background: none;
-        padding: 0;
+        margin: 0;
     }
     
     .nav-list {
@@ -533,6 +594,10 @@ a {
     
     .nav-list {
         display: none;
+    }
+
+    .burger-menu {
+        visibility: visible;
     }
 
     .title-container {

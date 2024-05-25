@@ -1,0 +1,180 @@
+<%- include('./partials/header') %>
+<body class="body">
+    <header class="header">
+        <nav class="header-nav" id="header-nav">
+            <div class="burger-menu" id="burger-menu">
+                <div class="burger-menu-icon" id="burger-menu-icon">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+                <ul class="burger-list">
+                    <li class="burger-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="burger-item"><a class="nav-link" href="#heroes">Nos Héros</a></li>
+                    <li class="burger-item"><a class="nav-link" href="#review">Témoignages</a></li>
+                    <li class="burger-item"><a class="nav-link" href="#contact-us">Sauvez-moi !</a></li>
+                </ul>
+            </div>
+            <h1 class="nav-title">Heros League</h1>
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#heroes">Nos Héros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#review">Témoignages</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact-us">Sauvez-moi !</a></li>
+            </ul>
+        </nav>
+        <div class="title-container">
+            <h2 class="header-title">Heros League</h2>
+            <p class="header-subtitle">Des gens spéciaux, pour des problèmes pas tout à fait normaux</p>
+        </div>
+    </header>
+    <section class="services" id="services">
+        <h2 class="services-title section-title">Nos <em class="super-title">Supers</em> Services</h2>
+        <div class="services-grid-container">
+            <article class="card mooving">
+                <h3 class="card-title">Super Déménagement</h3>
+                <p class="card-subtitle">Pour des déménagements sans effort et sans casse* !</p>
+                <button class="services-btn btn">À partir de 233 €</button>
+                <p class="card-joke"> * Nous ne pouvons malheureusement pas garantir que vos objets fragiles ou votre
+                    chat Gribouille survivront à un combat épique entre super-vilains lors du trajet.</p>
+            </article>
+            <article class="card delivery">
+                <h3 class="card-title">Livraison de Repas</h3>
+                <p class="card-subtitle">Pour des livraisons super-soniques*</p>
+                <button class="services-btn btn">À partir de 12 €</button>
+                <p class="card-joke"> * Pour éviter tout dommage à votre porte, merci de la laisser ouvert, certains
+                    super-héros n'ont pas conscience de leur force. Vous pouvez souscrire à notre assurance Porte en
+                    vrac pour 5€ de plus.</p>
+            </article>
+            <article class="card trafic">
+                <h3 class="card-title">Z'héro Bouchons</h3>
+                <p class="card-subtitle">Pour les clients pressés !*</p>
+                <button class="services-btn btn">1,33 €/km</button>
+                <p class="card-joke"> * Le mode de déplacement peut être différent en fonction de la disponibilité des
+                    héros. Merci de préciser à la commande si vous avez le mal des transports soniques.</p>
+            </article>
+            <article class="card party">
+                <h3 class="card-title">Sauvetage de soirée</h3>
+                <p class="card-subtitle">Pour les soirées booooring ! *</p>
+                <button class="services-btn btn">À partir de 50 €/h</button>
+                <p class="card-joke"> * Nous ne pouvons malheureusement pas garantir que votre super-héros ne se fera
+                    pas la malle si la soirée n'est pas sauvable</p>
+            </article>
+            <article class="card moral">
+                <h3 class="card-title">Moral à Z'héro</h3>
+                <p class="card-subtitle">Pour les jours gris et les coeurs lourds, des héros au moral d'acier.*</p>
+                <button class="services-btn btn">À partir de 100 €</button>
+                <p class="card-joke"> * Il peut arriver que le moral de votre héros ne soit pas au beau fixe et vous
+                    bassine avec sa défaite de la veille, dans ce cas, nous vous remboursons 50 % de la préstation.</p>
+            </article>
+        </div>
+    </section>
+    <section class="heroes" id="heroes">
+        <h2 class="heroes-title section-title">Nos <em class="super-title">Supers</em> Héros</h2>
+        <div class="hero-card-container">
+            <div class="hero-card Cat">
+                <p class="hero-description--hover">Ne contrôle pas tout à fait sa patte droite, et peut être amené à
+                    vous mettre une - plus ou moins petite - tape sur la tête.</p>
+                <div class="hero-presentation">
+                    <h4 class="hero-name">Cat Astrophic</h4>
+                    <p class="hero-description">Avec son ronron, il saura vous réconforter dans n'importe quelle
+                        situation.</p>
+                </div>
+            </div>
+            <div class="hero-card Carrot">
+                <p class="hero-description--hover">Attention, elle essaiera souvent de vous faire payer plus que le prix
+                    convenu avec Heros League. N'acceptez pas.</p>
+                <div class="hero-presentation">
+                    <h4 class="hero-name">Carotte Woman</h4>
+                    <p class="hero-description">Mis à part son apparence de carotte, on ne sait pas bien à quoi elle est
+                        forte, mais on va trouver.</p>
+                </div>
+            </div>
+            <div class="hero-card Ultraquenarde">
+                <p class="hero-description--hover">Vous sort du traquenard… Mais il arrive qu'elle vous entraîne dans un
+                    autre.
+                </p>
+                <div class="hero-presentation">
+                    <h4 class="hero-name">Ultraquenarde</h4>
+                    <p class="hero-description">Peut vous sortir de n'importe quel traquenard.</p>
+                </div>
+            </div>
+            <div class="hero-card Poulpy">
+                <p class="hero-description--hover">Un peu collant
+                </p>
+                <div class="hero-presentation">
+                    <h4 class="hero-name">Poulpy</h4>
+                    <p class="hero-description">Il a des tentacules gigantesques, super pratique pour les déménagements.
+                    </p>
+                </div>
+            </div>
+            <div class="hero-card Orang">
+                <p class="hero-description--hover">Peut être amené à vous demander de financer son prochain album, ne
+                    pas accepter.</p>
+                <div class="hero-presentation">
+                    <h4 class="hero-name">Orang Wu-Tang Clan.</h4>
+                    <p class="hero-description">Un gros singe agile, multi-tâche, qui intervient tout en rappant.</p>
+                </div>
+            </div>
+            <div class="hero-card Superimé">
+                <p class="hero-description--hover">N'a plus de pouvoir mais refuse de l'admettre, peut être amené à vous
+                    raconter des histoires de l'époque où il était encore super.</p>
+                <div class="hero-presentation">
+                    <h4 class="hero-name">Superimé</h4>
+                    <p class="hero-description">Un feu super-héro qui ne veut pas partir à la retraite</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="hero-btn btn">TOUS NOS HÉROS</a>
+    </section>
+    <section class="review" id="review">
+        <h2 class="review-title section-title">Les Témoignages de nos clients</h2>
+        <div class="review-card-container">
+            <article class="review-card">
+                <div class="pp pp1"></div>
+                <p class="pseudo">Tombédeu O.</p>
+                <p class="opinion"> "Grâce à Heros League, j'ai pu déménager super rapidement. Attention à l'odeur
+                    laissée par les tentacules ceci-dit. Merci Poulpy !"</p>
+            </article>
+            <article class="review-card">
+                <div class="pp pp2"></div>
+                <p class="pseudo">Jella N.</p>
+                <p class="opinion"> "Ultraquenarde m'a sauvé la vie ! J'allais tout perdre et sur ses conseils j'ai
+                    investi dans les bitcoins, affaire à suivre !"</p>
+            </article>
+            <article class="review-card">
+                <div class="pp pp3"></div>
+                <p class="pseudo">Bob O.</p>
+                <p class="opinion"> "Je ne remercierai jamais assez Carotte Woman d'avoir retrouvé mon chat. Apparement
+                    c'est normal si il est orange et plus noir, elle l'aurait retrouvé dans un produit chimique spécial.
+                    Je la crois sur parole !"</p>
+            </article>
+            <article class="review-card">
+                <div class="pp pp4"></div>
+                <p class="pseudo">Coupéhala H.</p>
+                <p class="opinion"> "Supervif a été super, il m'a sortie des bouchons et amenée au travail en un temps
+                    record. Par contre j'aimerais bien retrouver ma voiture maintenant."</p>
+            </article>
+        </div>
+    </section>
+    <section class="contact-us" id="contact-us">
+        <h2 class="contact-us-title section-title">Sauvez-moi !</h2>
+        <form class="contact-us-form" action="#" method="post">
+            <label class="label" for="name">Nom</label>
+            <input class="input" type="text" name="name" id="name">
+            <label class="label" for="Email">Email</label>
+            <input class="input" type="email" name="mail" id="Email">
+            <label class="label" for="service">Service</label>
+            <select class="input" name="services" id="service">
+                <option value="service 1">Super Déménagement</option>
+                <option value="service 2">Livraison de repas</option>
+                <option value="service 3">Z'héro bouchons</option>
+                <option value="service 4">Sauvetage de soirée</option>
+                <option value="service 5">Moral à Z'héro</option>
+            </select>
+            <label class="label" for="message">Message</label>
+            <textarea class="input textarea" name="message" id="message"></textarea>
+            <button type="submit" class="form-btn btn">Envoyer</button>
+        </form>
+    </section>
+<%- include('./partials/footer') %>
