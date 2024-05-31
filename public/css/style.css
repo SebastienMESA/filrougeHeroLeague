@@ -345,9 +345,9 @@ a {
 }
 
 .review-card-container {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
-    padding: 50px;
+    /* padding: 50px; */
     display: flex;
     justify-content: space-around;
     text-align: center;   
@@ -357,6 +357,7 @@ a {
     background: var(--color3);
     width: 20%;
     border-radius: 300px 300px 50px 50px;
+
 }
 
 .pp {
@@ -458,6 +459,10 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.hidden {
+    display: none;
 }
 
 @media (max-width: 1500px) {
@@ -636,14 +641,53 @@ a {
     }
 
     .review-card-container {
-        padding: 2em;
-        display: block; 
+        margin: 0 auto;
+        position: relative;
     }
     
-    .review-card {
+    
+    .slider__element {
         width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.3s;
     }
 
+    .slider__element--current {
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        position: relative;
+    }
+    
+    .slider__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 2;
+        font-weight: bold;
+        outline: none;
+        border: none;
+        transform: translateY(-50%);
+        background: none;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+    
+    .slider-prev {
+        top: 50%;
+        left: 0px;
+    }
+    
+    .slider-next {
+        top: 50%;
+        right: 0px;
+    }
+    
     .pp {
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;

@@ -31,20 +31,20 @@
     <section class="services" id="services">
         <h2 class="services-title section-title">Nos <em class="super-title">Supers</em> Services</h2>
         <div class="services-grid-container">
-            <% services.forEach(service => { %>
-                <article class="card <%= service.cssClass %>">
-                    <h3 class="card-title"><%= service.title %></h3>
-                    <p class="card-subtitle"><%= service.description %></p>
-                    <button class="services-btn btn">À partir de 
-                        <% if (service.id === 3) { %>
-                            <%= service.price %>€/h
-                            <% } else { %>
-                                <%= service.price %> €
-                            <% } %>
-                    </button>
-                    <p class="card-joke"> <%= service.joke %></p>
-                </article>
-            <% }) %>
+                <% services.forEach(service => { %>
+                    <article class="card <%= service.cssClass %>">
+                        <h3 class="card-title"><%= service.title %></h3>
+                        <p class="card-subtitle"><%= service.description %></p>
+                        <button class="services-btn btn">À partir de 
+                            <% if (service.id === 3) { %>
+                                <%= service.price %>€/h
+                                <% } else { %>
+                                    <%= service.price %> €
+                                    <% } %>
+                                </button>
+                                <p class="card-joke"> <%= service.joke %></p>
+                            </article>
+                            <% }) %>
         </div>
     </section>
     <section class="heroes" id="heroes">
@@ -64,14 +64,16 @@
     </section>
     <section class="review" id="review">
         <h2 class="review-title section-title">Les Témoignages de nos clients</h2>
-        <div class="review-card-container">
+        <div class="review-card-container slider" id="slider">
             <% reviews.forEach(review => { %>
-                <article class="review-card">
+                <article class="review-card slider__element">
                     <div class="pp <%= review.cssClass %>"></div>
                     <p class="pseudo"><%= review.author %></p>
                     <p class="opinion"> "<%= review.message %>" </p>
                 </article>
             <% }) %>
+            <button class="hidden slider__btn slider-prev" id="slider-prev">&lt;</button>
+            <button class="hidden slider__btn slider-next" id="slider-next">&gt;</button>
         </div>
     </section>
     <section class="contact-us" id="contact-us">
